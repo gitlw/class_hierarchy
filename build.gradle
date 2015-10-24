@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+mainClassName = "com.lulab.ch.ClassHierarchy"
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile group:'org.reflections', name:'reflections', version:'0.9.10'
+  compile group:'org.javassist', name:'javassist', version:'3.20.0-GA'
+}
